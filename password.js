@@ -101,13 +101,6 @@ reader.question("Welcome! Please enter a password: ", function(input){
         passwordMeetsRequirements = false;
     }
 
-    // Finally check for Lord of the Rings fans. Those guys are weird.
-    if(input.toUpperCase == "LOTR" || input.toUpperCase == "LORDOFTHETHERINGS")
-    {
-        // They just get an instant fail.
-        passwordMeetsRequirements = false;
-    }
-
     // Finally if the password does or does not meet all of the requirements let the user know.
     if(passwordMeetsRequirements) console.log("Congrats! Your password meets the requirements.");
     else console.log("Sorry but your password did not meet the requirements.");
