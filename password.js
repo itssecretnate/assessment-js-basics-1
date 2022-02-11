@@ -40,8 +40,7 @@ passwordRequirements.requireCapLetter = (passwordRequirements.minCapLetter > 0) 
 passwordRequirements.requireLowercaseLetter = (passwordRequirements.minLowercaseLetter > 0) ? true:false;
 
 // Specials character arrays for requirement checking
-let specialCharacters  = ['/', '[', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '-', '=', '[', ']', '{', '}', ';', "'", ':', '"', '\\', '|', ",", ".", "<", ">", "/", "?", "]", "+", "/"]; 
-//and so on but I'm lazy.
+let specialCharacters  = ['/', '[', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '-', '=', '[', ']', '{', '}', ';', "'", ':', '"', '\\', '|', ",", ".", "<", ">", "/", "?", "]", "+", "/"]
 let capitalLetters  = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 let lowercaseLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
@@ -64,7 +63,7 @@ reader.question("Welcome! Please enter a password: ", function(input){
     }
 
     // Finally check for Lord of the Rings fans. Those guys are weird.
-    if(input.toUpperCase() === "LOTR" || input.toUpperCase() === "LORDOFTHETHERINGS" || input.toLocaleUpperCase() === "LORD OF THE RINGS")
+    if(input.toUpperCase() === "LOTR" || input.toUpperCase() === "LORDOFTHETHERINGS" || input.toUpperCase() === "LORD OF THE RINGS")
     {
         // They just get an instant fail.
         passwordMeetsRequirements = false;
