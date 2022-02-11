@@ -104,18 +104,14 @@ function containsArrayCheck(inputString, arrayToCompare)
 
     containsCharactersFromArray = false;
 
-    for(let i = 0; i < tokens.length; i++)
-    {
-        for(let j = 0; j < arrayToCompare.length; j++)
-        {
-            //console.log(`Comparing ${tokens[i]} to ${arrayToCompare[j]}`)
-
+    for(let i = 0; i < tokens.length; i++) {
+        for(let j = 0; j < arrayToCompare.length; j++) {
             if(tokens[i] == arrayToCompare[j]) {
                 specialSymbolsFound.push(tokens[i]);
             }
         }
     }
-    //console.log(specialSymbolsFound.length);
+    
     if(specialSymbolsFound.length > 0) containsCharactersFromArray = true;
 
     return containsCharactersFromArray;
