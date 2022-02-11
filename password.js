@@ -81,7 +81,7 @@ function checkPassword(input) {
     }
 
     // Check ...lowercaseization?
-    if(passwordRequirements.minCapLetter > 0 && !containsArrayCheck(input, lowercaseLetters)) {
+    if(passwordRequirements.minLowercaseLetter > 0 && !containsArrayCheck(input, lowercaseLetters)) {
         console.log(`Password contains less than ${passwordRequirements.minLowercaseLetter} lowercase letters.`);
         passwordMeetsRequirements = false;
     }
