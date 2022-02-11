@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+let gitDefinition = "Git is a version control solution. Used to track changes to files and code in a project.";
 
 //////////////////PROBLEM 2////////////////////
 /*
